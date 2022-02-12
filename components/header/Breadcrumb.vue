@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav bg-grey-light">
     <ol class="list-reset flex">
       <li class="rows">
         <a href="#" class="text__style"> Poolapack > </a>
