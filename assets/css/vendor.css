@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+.header {
+  @apply
+  border-b-2
+  shadow-lg
+}
+.icon__menu {
+  @apply
+  mt-[18px]
+  flex
+  flex-row
+  justify-end
+  border-b-2
+  pb-4
+  }
+.rows {
+  @apply
+  flex
+  flex-row
+}
+.cols {
+  @apply
+  flex
+  flex-col
+}
+.text__footer {
+  @apply
+  font-normal
+  text-base
+  text-footer
+}
+.text__bold {
+  @apply
+  font-bold
+  text-base
+  text-footer
+}
+.logo {
+  @apply
+  md:w-[290px]
+  md:h-[59px]
+  w-28
+  h-10
+}
+.btn{
+  @apply
+  border-2
+  border-yellow
+  bg-yellow
+  md:w-[80px]
+  md:h-[44px]
+  h-[22px]
+  absolute
+  right-[0.2rem]
+  top-[0.2rem]
+}
+.input__search {
+  @apply
+  md:w-[650px]
+  md:h-[50px]
+focus:placeholder-accent
+focus:bg-white
+focus:border-secondary
+  focus:outline-none
+  border-2
+}
+.container {
+  @apply
+  md:grid
+  md:grid-cols-12
+  gap-[20px]
+  /* ml-[90px] */
+  mt-7
+  mb-8
+}
+.btn__minus {
+  @apply
+  border-2
+  rounded-md
+  w-6
+  h-6
+  absolute
+  left-0
+}
+.btn__plus {
+  @apply
+  border-2
+  border-yellow
+  rounded-md
+  w-6
+  h-6
+  absolute
+  right-0
+
+}
+.input__number {
+  @apply
+  border-2
+  md:w-[110px]
+  w-[100px]
+  h-[25px]
+  text-center
+}
+.tab__a {
+  @apply
+  text-yellow
+  md:mx-10
+  md:px-14
+  px-4
+  py-2
+  rounded-lg
+}
+.footer__align{
+  @apply
+  md:justify-between md:mx-[98px] mx-4 my-12
+}
+.nav{
+  @apply
+  md:ml-[98px] ml-4 mt-7 bg-secondary rounded-md w-full
+}
+.text__style {
+  @apply
+  text-secondary hover:text-secondary md:text-base text-xs
+}
+.list-category{
+  @apply
+  md:my-8 md:mx-[98px] mx-4 mt-2 mb-2
+}
+}
