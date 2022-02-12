@@ -9,12 +9,12 @@
         />
       </div>
       <div class="rows space-x-2">
-        <div class="border rounded-xl w-[80px] h-[80px]">
-          <img
-            class="md:w-full md:h-full"
-            src="../../static/img/Frame 485.jpg"
-            alt=""
-          />
+        <div
+          v-for="items in $store.state.products"
+          :key="items.id"
+          class="border rounded-xl w-[80px] h-[80px]"
+        >
+          <img class="w-full h-full" :src="`${items.imgUrl}`" alt="" />
         </div>
       </div>
     </div>
