@@ -1,5 +1,5 @@
 <template>
-  <div class="container md:ml-[98px] mt-7 mb-8">
+  <div class="container md:ml-[98px] mt-7">
     <div class="col-span-8 md:-mx-1 mx-4 mb-4">
       <div class="mb-14">
         <h1
@@ -125,8 +125,10 @@
       </div>
     </div>
 
-    <div class="col-span-3 border-2 rounded-lg shadow-xl md:mx-1 mx-4">
-      <div class="cols mx-2 my-4">
+    <div
+      class="col-span-3 border-2 h-[256px] rounded-lg shadow-xl md:mx-1 mx-4"
+    >
+      <div class="cols mx-2 mt-4">
         <h1 class="font-bold text-footer text-base mb-7">Ringkasan</h1>
         <span
           class="rows justify-between font-normal text-footer text-base mb-2"
@@ -141,12 +143,12 @@
           <h2>Rp.{{ diskon }}</h2>
         </span>
         <span
-          class="rows justify-between font-normal text-secondary text-base mb-7"
+          class="rows justify-between font-normal text-secondary text-base mb-5"
         >
           Total Harga:
           <h2 class="font-bold text-footer">Rp.{{ total }}</h2>
         </span>
-        <button class="bg-yellow rounded-lg w-full px-3 py-1 text-white">
+        <button class="bg-yellow rounded-lg w-full px-3 py-1 text-white mb-4">
           Buat Pesanan (0)
         </button>
       </div>
@@ -155,6 +157,7 @@
 </template>
 
 <script>
+import InputNumber from '~/components/parts/InputNumber.vue'
 export default {
   props: {
     harga: {
@@ -187,6 +190,7 @@ export default {
       this.total = this.qtyPrice - this.diskon
     },
   },
+  components: { InputNumber },
 }
 </script>
 

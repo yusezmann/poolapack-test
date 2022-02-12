@@ -654,6 +654,7 @@ import InputNumber from '../parts/InputNumber.vue'
 import Countdown from '../parts/Countdown.vue'
 import Rating from '../parts/Rating.vue'
 import Cards from '../parts/Cards.vue'
+import BoxHarga from '../parts/BoxHarga.vue'
 export default {
   // middleware: 'auth',
   components: {
@@ -667,6 +668,7 @@ export default {
     Countdown,
     Rating,
     Cards,
+    BoxHarga
   },
 }
 </script>
